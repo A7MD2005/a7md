@@ -1,0 +1,269 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+html{
+    scroll-behavior: smooth;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    color: rgb(10, 0, 0);
+    font-size: 20px;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    text-align: center;
+}
+nav ul li a:hover{
+    background-color: #ccc;
+}
+nav ul{
+    display: flex;
+    list-style: none;gap: 30px;
+}
+nav h1 span{
+    font-weight: normal;
+    font-size: 19px;
+}
+nav ul li{
+    text-decoration: none;
+    margin-right: 25px;
+}
+nav ul li a{
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    transition: 0.5s;
+    padding: 10px;
+}
+.menu{
+    font-size: 25px;
+    cursor: pointer;
+    display: none;
+}
+.header{
+    position: relative;
+    background-image: url(imgs/header.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+.header h2{
+    position: absolute;
+    top: 45%;
+    left: 45%;
+    color: #fff;
+    font-size: 40px;
+}
+.header h2 span{
+    background-color: #000;
+    padding: 10px;
+    opacity: 0.5;
+    border-radius: 10px;
+}
+.Projects{
+    width: 90%;
+    margin: 100px auto;
+}
+hr{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    opacity: 0.5;
+}
+.house{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.house .home{
+    width: 24%;
+    position: relative;
+}
+.house .home img{
+    width: 100%;
+}
+.house .home p{
+    position: absolute;
+    top: 0px;
+    background-color: black;
+    color: white;
+    padding: 6px;
+}
+.about{
+    width: 90%;margin: 100px auto;
+}
+.about .p{
+    margin-top: 20px;
+}
+.chars{
+    margin-top: 100px;
+    display: flex;
+    gap: 10px;
+}
+.chars .char{
+    width: 24%;
+}
+.chars .char img{
+    margin-top: -15px;
+    width: 100%;
+}
+.chars .char > * {
+    margin-top: 20px;
+}
+.chars .char h3{
+    font-size: 20px;
+}
+.chars .char h4{
+  font-size: 18px;
+  opacity: 0.5;
+}
+.chars .char  p{
+    line-height: 1.8;
+}
+.chars .char button{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    transition: 0.5s;
+}
+
+.chars .char button:hover{
+    background-color: #ccc;
+}
+.contact{
+    width: 90%;
+    margin: 100px auto;
+}
+.contact form {
+    margin-top: 50px;
+}
+.contact form input{
+        width: 80%;
+        margin-top: 10px;
+        padding: 15px;
+        outline: none;
+}
+    
+.contact form input::placeholder{
+        font-size: 16px;
+}
+.contact button{
+        margin-top: 30px;
+        padding: 15px;
+        font-size: 18px;
+        background-color: #000;
+        color: #fff;
+        text-transform: uppercase;
+        cursor: pointer;
+        transition: 0.5s;
+        border: none;
+}
+.contact button:hover{
+        background-color: grey;
+        color: black;
+}
+.photo{
+    width: 90%;
+    margin: 100px auto;
+}
+.photo img{
+    width: 100%;
+}
+.footer{
+background-color: #000;
+color: #ffff;
+padding: 50px;
+text-align: center;
+font-size: 22px;
+}
+.footer p span{
+    color: orange;
+    font-weight: bold;
+}
+@media screen and (max-width :450px) {
+    nav ul{
+        display: none;
+        
+    }
+    .menu{
+        font-size: 25px;
+        cursor: pointer;
+        display: block;
+    }
+    .header h2{
+        position: absolute;
+        top: 45%;
+        left: 25%;
+        color: #fff;
+        font-size: 40px;
+    }
+    
+    hr{
+        margin-bottom: 25px;
+        margin-top: 20px;
+        opacity: 0.5;
+    }
+    .house{
+       flex-direction: column;
+    }
+    .house .home{
+        width: 100%;
+        position: relative;
+    }
+    
+   
+    .chars{
+       flex-direction: column;
+    }
+    .chars .char{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+}
+@media screen and (min-width :451px) and (max-width :768px) {
+    nav ul{
+        display: none;
+        
+    }
+    .menu{
+        font-size: 25px;
+        cursor: pointer;
+        display: block;
+    }
+    .header h2{
+        position: absolute;
+        top: 45%;
+        left: 35%;
+        color: #fff;
+        font-size: 40px;
+    }
+    
+    hr{
+        margin-bottom: 25px;
+        margin-top: 20px;
+        opacity: 0.5;
+    }
+    .house{
+        margin: 50px 0px;
+    }
+    .house .home{
+        width: 49%;
+    }
+    .chars{
+        flex-wrap: wrap;
+    }
+    .chars .char{
+        width: 49%;
+        margin-bottom: 10px;
+    }
+}
+
+
